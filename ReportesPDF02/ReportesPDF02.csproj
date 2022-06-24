@@ -126,6 +126,8 @@
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
@@ -204,22 +206,49 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="departamentos.cs" />
+    <Compile Include="distritos.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="ModelPeru.cs" />
+    <Compile Include="Models\DaoPeru.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="provincias.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\main.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\apis.png" />
+    <Content Include="images\argentina.png" />
+    <Content Include="images\brasil.png" />
+    <Content Include="images\chile.png" />
+    <Content Include="images\ecuador.png" />
+    <Content Include="images\gold.png" />
+    <Content Include="images\logo.gif" />
+    <Content Include="images\mini.png" />
+    <Content Include="images\paisaje.jpg" />
+    <Content Include="images\peru.png" />
+    <Content Include="images\pi-favicon.gif" />
+    <Content Include="images\platinum.png" />
+    <Content Include="images\premium.png" />
+    <Content Include="images\rupuml.png" />
+    <Content Include="jq\bootstrap\bootstrap-icons.min.css" />
+    <Content Include="jq\bootstrap\bootstrap.bundle.min.js" />
+    <Content Include="jq\bootstrap\bootstrap.min.css" />
+    <Content Include="jq\jquery-3.6.0.min.js" />
+    <Content Include="js\main.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="jq\bootstrap\fonts\bootstrap-icons.woff" />
+    <Content Include="jq\bootstrap\fonts\bootstrap-icons.woff2" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -248,7 +277,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
